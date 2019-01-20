@@ -7,17 +7,21 @@ AIとは、「Artificial Intelligence」の略で人工知能のことを指し�
 - ゲームセンターでよく見かけるホッケーのゲームをAIにプレイさせてみる
 - ブロック崩しをAIにさせてみる
 
-## インストール方
+## インストール方法
 
 ### AnacondaのPythonのインストール
-Pythonというプログラミング言語を用いてAIの実装をします。Pythonの中でも、AnacondaとよばれるPythonの環境を管理するソフトを使うと、ライブラリやモジュールのインストールが簡単にできます。また、特定のOSにおいてインストールの難しいライブラリもAnacondaを使用してインストールすると正常に動作するケースが多いのでおすすめです。linuxやMacなどのOSではAnacondaをインストールしなくてもPythonが使える場合が多いですが、OSと関連の深いパッケージに悪影響を及ぼしてしまう（Ubuntuの場合apt-get でインストールしたライブラリが、今後自動で更新されなくなるなど）ことがあるため、AnacondaのPythonをインストールしましょう。
+Pythonというプログラミング言語を用いてAIの実装をします。Pythonの中でも、AnacondaとよばれるPythonの環境を管理するソフトを使うと、ライブラリやモジュールのインストールが簡単にできます。また、特定のOSにおいてインストールの難しいライブラリもAnacondaを使用してインストールすると正常に動作するケースが多いのでおすすめです。linuxやMacなどのOSではAnacondaをインストールしなくてもPythonが使える場合が多いですが、OSと関連の深いパッケージに悪影響を及ぼしてしまう（Ubuntuの場合apt-get でインストールしたライブラリが、今後自動で更新されなくなるなど）ことがあるため、AnacondaのPythonをインストールしましょう。<br>
 
-インストール方法は以下のサイトを参考にしてください。
-<a href="https://weblabo.oscasierra.net/python-anaconda-install-windows/">Anaconda を Windows にインストールする手順</a>
+ダウンロードは以下のリンクから行ってください。<br>
+<a href="https://www.anaconda.com/download/">Download Anaconda Distribution</a><br>
+
+インストール方法は以下のサイトを参考にしてください。<br>
+<a href="https://weblabo.oscasierra.net/python-anaconda-install-windows/">Anaconda を Windows にインストールする手順</a><br>
 
 ### コマンドプロンプト（ターミナル）を立ち上げる
 Anacondaをインストールし終わったら、次にコマンドプロンプトを立ち上げます。コマンドプロンプトはプログラムを実行するのに必要な環境です。
 Windows10の場合は左下にある検索ボックスに「Anaconda」と入力し、ヒットした「Anaconda Prompt」（黒い画面のイラストが描かれたもの）をクリックします。
+#### 動作確認したい方
 黒い画面が出たら試しに以下のコマンドを入力してエンターキーを押してみます。
 
 ```
@@ -25,7 +29,23 @@ python
 ```
 そして、以下のようなメッセージが出たらインストール成功です。インストールした環境によって少しづつ文面が違ってきますが、大丈夫です。
 ```
-(base) C:\Users\username>python                                                                                         Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)] on win32                     Type "help", "copyright", "credits" or "license" for more information.                                                  >>>  
+(base) C:\Users\username>python
+Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.                                                  >>>  
+```
+
+これで、動作確認はできましたので、右上のX印を押して終了して、アプリ（Anaconda Prompt）をもう一度再起動するか、コマンドプロンプトにexit()とタイプしてエンターを押してください。
+
+
+### Pythonの仮想環境の作成とライブラリのインストール
+インストールしたPythonはこのままでも使えますが、今回実行するプログラムは残念ながらPython 3.7系で動かないので、新しくPythonの仮想環境を作ります。
+インターネットがつながった状態で、先ほど開いたAnaconda Promptに以下のコマンドを打ち込みます。
+```
+conda create -n aibook python=3.6.6
+(途中確認のメッセージが出るので、yかエンターを押す)
+(しばらく待つ)
+conda activate aibook
+
 ```
 
 
