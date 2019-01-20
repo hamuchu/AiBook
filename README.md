@@ -45,8 +45,17 @@ conda create -n aibook python=3.6.6
 (途中確認のメッセージが出るので、yかエンターを押す)
 (しばらく待つ)
 conda activate aibook
-
+pip install tensorflow
+pip install keras
+pip install gym
 ```
+
+### ソースコードのダウンロード
+ソースコードをダウンロードします。このgithubのページの右上に表示される「Clone or download」をクリックします。
+ダウンロードした時のファイル名は「AiBook-master.zip」になっていると思うので、Windowsのダウンロードフォルダにあるzipファイルを解凍し、ホームディレクトリ（Windowsの場合　C:\Users\ユーザ名\）に配置してください。コンピュータの操作に自信がある方は、どこに配置していただいても構いません。解凍の方法が分からない方は、以下の記事を参考にしてください。
+
+<a href="https://121ware.com/qasearch/1007/app/servlet/relatedqa?QID=018844">Windows 10で圧縮ファイルを展開する方法 - NEC・LaVie</a>
+
 
 
 ## 今後改良するとしたら
