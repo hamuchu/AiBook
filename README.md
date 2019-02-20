@@ -58,8 +58,51 @@ pip install gym
 
 
 
-## 今後改良するとしたら
-- 顔認識で誰が写っているか、女性か男性かを判別
-- 簡単な株価予測
-- ２枚の画像とAIを使って芸術的な画像を生成（neural style transfer）<a href="https://docs.neptune.ml/get-started/style-transfer/">WEBサイトへのリンク</a>
+## 4.　コマンドプロンプトを操作してみよう
+```
+cd C:\
+```
+```
+dir
+```
+```
+cd AiBook-master
+```
+## 5. AIを動かすための環境構築
+
+ライブラリと呼ばれる、Pythonのモジュールをインストールするためのコマンドを書きます。ライブラリをまとめてインストールしたい方は、下記の「ライブラリをまとめてインストール」を参照してください。
+```
+conda create -n aibook python=3.5.6
+```
+```
+conda activate aibook
+```
+```
+conda install git
+```
+```
+conda install matplotlib
+```
+```
+pip install tensorflow
+```
+```
+pip install keras
+```
+```
+pip install opencv-python
+```
+```
+pip install scikit-image
+```
+```
+pip install gym
+```
+### ライブラリをまとめてインストール
+
+AiBook-masterディレクトリ（ソースコードのルートディレクトリ）に移動し、以下のコマンドを打ち込む。
+```
+pip install -r requirements.txt
+```
+
 
