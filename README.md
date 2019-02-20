@@ -100,9 +100,69 @@ pip install gym
 ```
 ### ライブラリをまとめてインストール
 
-AiBook-masterディレクトリ（ソースコードのルートディレクトリ）に移動し、以下のコマンドを打ち込む。
+AiBook-masterディレクトリ（ソースコードのルートディレクトリ）に移動し、以下のコマンドを打ち込む。(pipでインストールが必要な部分のみ手順が短くなります)
 ```
 pip install -r requirements.txt
 ```
-
-
+続いて、以下のコマンドも打ち込む。
+```
+conda create -n aibook python=3.5.6
+```
+```
+conda activate aibook
+```
+```
+conda install git
+```
+```
+conda install matplotlib
+```
+### 2019年2月20日現在の筆者の環境でのライブラリのバージョン
+```
+absl-py==0.7.0
+astor==0.7.1
+atari-py==0.1.7
+certifi==2018.8.24
+chardet==3.0.4
+cloudpickle==0.7.0
+cycler==0.10.0
+dask==1.1.1
+decorator==4.3.2
+future==0.17.1
+gast==0.2.2
+grpcio==1.18.0
+gym==0.11.0
+h5py==2.9.0
+idna==2.8
+Keras==2.2.4
+Keras-Applications==1.0.7
+Keras-Preprocessing==1.0.8
+kiwisolver==1.0.1
+Markdown==3.0.1
+matplotlib==3.0.0
+mkl-fft==1.0.6
+mkl-random==1.0.1
+networkx==2.2
+numpy==1.16.1
+opencv-python==4.0.0.21
+Pillow==5.4.1
+protobuf==3.6.1
+pyglet==1.3.2
+pyparsing==2.2.1
+python-dateutil==2.7.3
+pytz==2018.5
+PyWavelets==1.0.1
+PyYAML==3.13
+requests==2.21.0
+scikit-image==0.14.2
+scipy==1.2.0
+six==1.12.0
+tensorboard==1.12.2
+tensorflow==1.12.0
+termcolor==1.1.0
+toolz==0.9.0
+tornado==5.1.1
+urllib3==1.24.1
+Werkzeug==0.14.1
+wincertstore==0.2
+```
